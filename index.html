@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajesh Sharma | Professor & Mentor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#1e3c72,#2a5298,#6a11cb,#2575fc);
+    background-size:400% 400%;
+    animation:gradientBG 15s ease infinite;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+    position:fixed;
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+}
+nav a:hover{color:#ffd700;}
+
+section{
+    padding:120px 10%;
+    min-height:100vh;
+}
+
+/* ARTISTIC HOME */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display',serif;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.6;
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+}
+
+.hero-img img{
+    width:80%;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.highlight-box{
+    margin-top:30px;
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:30px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+}
+
+@media(max-width:900px){
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+.hero-text h1{
+    font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Rajesh Sharma</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Us</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+        <h1>Prof. Rajesh Sharma</h1>
+        <p>
+            A visionary Professor of Hindi and a distinguished expert in Art & Culture.
+            Transforming aspirants into achievers for RAS & IAS with strategy, scholarship and inspiration.
+        </p>
+
+        <div class="highlight-box">
+            ✔ Extraordinary Academic Record <br>
+            ✔ Research-Oriented Approach <br>
+            ✔ Master Mentor for Civil Services <br>
+            ✔ Dynamic Speaker & Motivator
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Professor Teaching">
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Academic & Research Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="Research Lab">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="University Lecture">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Research Discussion">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="Academic Writing">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Books and Study">
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="University Campus">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="card">
+        <h2>About Prof. Rajesh Sharma</h2>
+        <p>
+        With a deep foundation in Hindi literature and Indian Art & Culture,
+        Prof. Rajesh Sharma stands as a beacon of academic excellence and mentorship.
+        His research-driven teaching style, structured preparation modules and
+        inspirational guidance have shaped numerous RAS and IAS achievers.
+        </p>
+    </div>
+</section>
+
+<footer>
+© 2026 Rajesh Sharma | Academic Excellence & Leadership
+</footer>
+
+</body>
+</html>
+<!-- ================= CHATBOT ================= -->
+
+<style>
+#chatIcon{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#ffd700;
+    color:black;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+#chatBox{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:320px;
+    background:rgba(0,0,0,0.8);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    display:none;
+    flex-direction:column;
+    overflow:hidden;
+    z-index:1000;
+}
+
+#chatHeader{
+    background:#ffd700;
+    color:black;
+    padding:10px;
+    font-weight:bold;
+    text-align:center;
+}
+
+#chatMessages{
+    padding:10px;
+    height:300px;
+    overflow-y:auto;
+    font-size:14px;
+}
+
+.message{
+    margin:8px 0;
+    padding:8px 12px;
+    border-radius:15px;
+    max-width:80%;
+}
+
+.bot{
+    background:#444;
+}
+
+.user{
+    background:#ffd700;
+    color:black;
+    align-self:flex-end;
+}
+
+#chatInput{
+    display:flex;
+}
+
+#chatInput input{
+    flex:1;
+    border:none;
+    padding:10px;
+    border-radius:0;
+}
+
+#chatInput button{
+    border:none;
+    padding:10px;
+    background:#ffd700;
+    cursor:pointer;
+}
+</style>
+
+<div id="chatIcon" onclick="toggleChat()">💬</div>
+
+<div id="chatBox">
+    <div id="chatHeader">Student Support AI</div>
+    <div id="chatMessages"></div>
+    <div id="chatInput">
+        <input type="text" id="userInput" placeholder="Ask about RAS / IAS..." onkeypress="if(event.key==='Enter')sendMessage()">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+function toggleChat(){
+    const box=document.getElementById("chatBox");
+    box.style.display = box.style.display==="flex" ? "none" : "flex";
+}
+
+function sendMessage(){
+    const input=document.getElementById("userInput");
+    const message=input.value.trim();
+    if(message==="") return;
+
+    addMessage(message,"user");
+    input.value="";
+
+    setTimeout(()=>{
+        const reply=getBotReply(message.toLowerCase());
+        addMessage(reply,"bot");
+    },500);
+}
+
+function addMessage(text,type){
+    const msg=document.createElement("div");
+    msg.className="message "+type;
+    msg.innerText=text;
+    document.getElementById("chatMessages").appendChild(msg);
+    document.getElementById("chatMessages").scrollTop=9999;
+}
+
+function getBotReply(message){
+
+    if(message.includes("ras"))
+        return "RAS preparation includes Art & Culture, Hindi Literature, and answer writing practice.";
+
+    if(message.includes("ias"))
+        return "IAS mentorship includes Prelims, Mains strategy and Interview guidance.";
+
+    if(message.includes("fee"))
+        return "Please contact admin for updated fee structure.";
+
+    if(message.includes("timing"))
+        return "Classes run in morning and evening batches.";
+
+    if(message.includes("contact"))
+        return "You can register through the website or contact the institute office.";
+
+    if(message.includes("culture"))
+        return "Art & Culture special batch covers Indian heritage, architecture and literature.";
+
+    return "Thank you for your query. Our team will guide you personally for detailed assistance.";
+}
+</script>
+
+<!-- ================= END CHATBOT ================= -->
